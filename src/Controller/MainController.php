@@ -15,4 +15,21 @@ class MainController extends AbstractController
             'controller_name' => 'Accueil',
         ]);
     }
+
+
+    #[Route('/legal-stuff', name: 'legal-stuff')]
+    public function legalSuff(): Response
+    {
+        return $this->render('main/legalStuff.html.twig', [
+            'controller_name' => 'MainController',
+        ]);
+    }
+
+    #[Route('/about-us', name: 'about-us')]
+    public function aboutUs(): Response
+    {
+        return $this->render('main/about-us.html.twig', [
+            'controller_name' => 'MainController',
+        ]);
+    }
 }
