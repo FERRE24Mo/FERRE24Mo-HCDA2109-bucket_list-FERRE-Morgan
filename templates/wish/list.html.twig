@@ -3,16 +3,34 @@
 {% block body %}
 
     <h1 class="h-wish">Wish List</h1>
-    
-    {% for w in wish_list %}
-    <div class="wish">
-        <a class="title-wish" href="{{path('wish_detail', {id : w.id})}}">Wish n°{{w.id}}</a>
-        <p>Title : <a>{{w.title}}<a></p>
-        <p>Description : {{w.description}}</p>
-        <p>Author : <a>{{w.author}}<a></p>
-        <p>Published : <a>{{w.isPublished == 1?'yes':'no'}}<a></p>
-        <p>Created : <a>{{w.dateCreated|date('d/m/Y h:m')}}<a></p>
-    </div>
-    {% endfor %}
+    <!DOCTYPE html>
+
+        <table class="table">
+          <thead>
+            <tr>
+              <th>Title</th>
+              <th>Description</th>
+              <th>Author</th>
+              <th>Published</th>
+              <th>Created</th>
+            </tr>
+          </thead>
+          <tbody>
+            {% for w in wish_list %}
+            <div class="wish">
+            <tr>
+              <td><a>{{w.title}}<a></td>
+              <td><p>{{w.description}}</p></td>
+              <td><a>{{w.author}}<a></td>
+              <td><a>{{w.isPublished == 1?'yes':'no'}}<a></td>
+              <td><a>{{w.dateCreated|date('d/m/Y h:m')}}<a></td>
+            </tr>
+             {% endfor %}
+          </tbody>
+        </table>
+      </div>
+      <br><br>
+     
+   
 
 {% endblock %}
