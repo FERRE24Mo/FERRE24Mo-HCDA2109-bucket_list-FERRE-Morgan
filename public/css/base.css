@@ -1,28 +1,3 @@
-@font-face {
-    font-family: "priceDown";
-    src: url("fonts/pricedown.otf") format("otf"),
-   }
-   
-/* body{background-color: white} */
-
-.test{font-family: "priceDown";}
-
-.foot{width:100%;background-color: grey;position: fixed;bottom: 0;text-align: center}
-
-.wish{font-family: "priceDown";text-align: center;border: solid black 1px;border-color: grey}
-.h-wish{font-family: "priceDown";text-align: center}
-
-.title-wish{font-size: 30px;text-decoration: underline;color: black}
-.logo{padding-right: 3rem}
-.nav-horizontal {
-    font-family: "priceDown";
-    background-color: #fff;
-    overflow: hidden;
-    height: 3em;
-    width: 100%;
-    font-size: 20px;
-    text-align: center;
-  }
 .mask {
     height: 5em;
     width: 100%;
@@ -35,35 +10,21 @@
     margin: 0 auto;
     max-width: 100%;
 }
+
 li{
     display: table-cell;
 }
   
-.link{
-    display: block;
-    padding: 0 1em;
-    text-decoration: none;
-    color: #333;
-    height: 3em;
-    line-height: 3;
-}
-
-
 .link:hover {
     border-bottom: 2px solid black;
-    background-color: #f9f9f9;
+    background-color: #FF4500 ;
 }
   
 /* codepen用 reset */
 
 *{box-sizing: border-box;}
   
-body{padding-top: 0;width:99vw;}
-
-/**
-footer
- */
-footer {
-    padding: 20px 0;
-    text-align: center;
+body{
+    padding-top: 0;width:99vw;
+    background-color: #FF4500 ;
 }
