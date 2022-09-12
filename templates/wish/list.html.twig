@@ -13,6 +13,7 @@
               <th>Author</th>
               <th>Published</th>
               <th>Created</th>
+              <th>Details</th>
             </tr>
           </thead>
           <tbody>
@@ -24,6 +25,7 @@
               <td><a>{{w.author}}<a></td>
               <td><a>{{w.isPublished == 1?'yes':'no'}}<a></td>
               <td><a>{{w.dateCreated|date('d/m/Y h:m')}}<a></td>
+              <td><a href="{{path('wish_detail', {id : w.id})}}">Detail</a></td>
             </tr>
              {% endfor %}
           </tbody>

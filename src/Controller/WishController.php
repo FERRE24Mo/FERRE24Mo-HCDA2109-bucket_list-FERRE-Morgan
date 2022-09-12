@@ -28,7 +28,7 @@ class WishController extends AbstractController
     }
 
     #[Route('/{id}', name: 'detail')]
-    public function detail($id): Response 
+    public function detail(EntityManagerInterface $entityManager,$id): Response
     {
         $wish = $entityManager->getRepository(Wish::class)->find($id);
 
@@ -37,5 +37,4 @@ class WishController extends AbstractController
             'wish' => $wish
         ]);
     }
-
 }
