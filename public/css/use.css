@@ -7,6 +7,10 @@
     font-family: "priceDown";
 }
 
+.table{
+    text-align:center;
+}
+
 .foot{
     width:100%;
     background-color: grey
@@ -57,10 +61,12 @@
     display: inline-table;
     margin: 0 auto;
     max-width: 100%;
+    
 }
 
 li{
     display: table-cell;
+    
 }
   
 .link{
